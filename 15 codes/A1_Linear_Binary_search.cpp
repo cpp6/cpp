@@ -8,8 +8,6 @@ b) Write a program to store roll numbers of student array who attended training 
 #include <algorithm> 
 using namespace std;
 
-const int MAX = 100;
-
 bool linearSearch(int arr[], int n, int key) {
     for (int i = 0; i < n; i++) {
         if (arr[i] == key)
@@ -33,7 +31,7 @@ bool binarySearch(int arr[], int n, int key) {
 }
 
 int main() {
-    int roll[MAX], n, choice, searchKey;
+    int roll[100], n, choice, searchKey;
 
     cout << "Enter number of students: ";
     cin >> n;
@@ -97,3 +95,4 @@ int main() {
 
     return 0;
 }
+
