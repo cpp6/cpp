@@ -7,8 +7,6 @@ Write function for sorting array of floating point numbers in ascending order us
 #include <iostream>
 using namespace std;
 
-const int MAX = 100;
-
 void bubbleSort(float arr[], int n) {
     for (int i = 0; i < n - 1; i++) {
         for (int j = 0; j < n - i - 1; j++) {
@@ -27,7 +25,7 @@ void displayTopFive(float arr[], int n) {
 }
 
 int main() {
-    float percentages[MAX];
+    float percentages[100];
     int n;
 
     cout << "Enter number of students: ";
@@ -49,3 +47,4 @@ int main() {
 
     return 0;
 }
+
