@@ -116,3 +116,22 @@ int main() {
     menu();
     return 0;
 }
+
+/*
+Algo;
+Start
+Create structure Seat with seat_number, status, prev, next.
+Initialize 10 rows with 7 seats each using doubly linked list (initializeTheater()).
+DisplayAvailableSeats() – Traverse each row and show seats where status == 0.
+BookSeat(row, seat) –
+Check valid row & seat number.
+Traverse to find the seat.
+If already booked → show message.
+Else → set status = 1 (booked).
+Menu() –
+1: Display available seats
+2: Book a seat
+3: Exit
+Call initializeTheater() and menu() in main().
+Stop
+*/
