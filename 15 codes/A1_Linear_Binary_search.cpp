@@ -96,3 +96,20 @@ int main() {
     return 0;
 }
 
+// Algorithm
+/*
+a) Linear Search:
+1. Start from the first element of the array.
+2. Compare each element with the key.
+3. If found, return true.
+4. If not found after checking all elements, return false.
+
+b) Binary Search:
+1. Set low = 0 and high = n-1.
+2. While low <= high:
+○ Find mid = (low + high)/2.
+○ If arr[mid] == key, return true.
+○ If arr[mid] > key, set high = mid - 1.
+○ If arr[mid] < key, set low = mid + 1.
+3. If not found, return false.
+*/
