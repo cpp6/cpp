@@ -50,3 +50,22 @@ int main() {
     return 0;
 }
 
+// Algorithm
+
+/*
+Selection sort:
+1. Start
+2. Read the number of elements n
+3. Read the array elements A[0] to A[n-1]
+4. Repeat for i = 0 to n-2:
+● Set min_index = i
+● Repeat for j = i+1 to n-1:
+If A[j] < A[min_index] then
+■ Set min_index = j
+● If min_index ≠ i then
+○ Swap A[i] and A[min_index]
+5. End of loop
+6. Display the sorted array
+7. Display the top 5 scores (last 5 elements of sorted array)
+8. Stop
+*/
