@@ -48,3 +48,17 @@ int main() {
     return 0;
 }
 
+/* Algorithm
+Bubble sort:
+1. Start
+2. Read the number of elements n
+3. Read the array elements A[0] to A[n-1]
+4. Repeat for i = 0 to n-2:
+● Repeat for j = 0 to n-i-2:
+○ If A[j] > A[j+1] then
+■ Swap A[j] and A[j+1]
+5. End of loop
+6. Display the sorted array
+7. Display the top 5 scores (last 5 elements of sorted array)
+8. Stop
+*/
