@@ -145,3 +145,33 @@ int main() {
     menu();
     return 0;
 }
+
+/*
+Algo:
+Start
+Create a Seat structure with:
+seat_number
+status (0 = free, 1 = booked)
+prev, next pointers
+Initialize Theater
+For 10 rows:
+Create 7 Seat nodes linked as a doubly linked list.
+Store each row’s head pointer in rows[i].
+Randomly mark some seats as booked (status = 1).
+Display Available Seats
+Traverse each row and print all seat_number where status == 0.
+Book a Seat
+Input row and seat number.
+If already booked → show message.
+Else → set status = 1.
+Cancel Booking
+Input row and seat number.
+If already free → show message.
+Else → set status = 0.
+Menu
+1: Display Available Seats
+2: Book Seat
+3: Cancel Booking
+4: Exit
+End
+*/
