@@ -178,5 +178,57 @@ int main() {
                 cout << "Invalid choice. Try again.\n";
         }
     }
+return 0;
 }
 
+
+/* Algo:
+Start
+Define structure Node
+Fields:
+prn – Student PRN
+name – Student name
+next – Pointer to next node
+Initialize class PinnacleClub
+Create pointer head and set it to NULL.
+Functions
+addPresident(prn, name)
+Create a new node.
+Set newNode->next = head.
+Update head = newNode.
+addSecretary(prn, name)
+Create new node.
+If list empty → make it head.
+Else traverse to last node and attach new node.
+addMember(prn, name)
+Check if president and secretary exist.
+Traverse to node before secretary.
+Insert new node before secretary.
+Deletion Functions
+deletePresident()
+If list empty → print “No president”.
+Else move head to head->next, delete old head.
+deleteSecretary()
+If list has less than two nodes → print “No secretary”.
+Else traverse to second-last node, delete last node.
+deleteMember(prn)
+Traverse list and find node whose prn matches.
+Skip that node by adjusting links and delete it.
+If not found → print “Member not found”.
+Utility Functions
+display()
+Traverse from head and print all members’ PRN and Name.
+countMembers()
+Initialize counter = 0.
+Traverse all nodes, increment counter.
+Return total count.
+Main Menu
+Show menu options to:
+Add President / Secretary / Member
+Delete President / Secretary / Member
+Display Members
+Count Members
+Exit
+Perform selected operation repeatedly until user exits.
+Stop
+*/
