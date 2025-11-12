@@ -157,3 +157,27 @@ int main() {
 
     return 0;
 }
+
+/*
+Algo:
+Start
+Initialize root as NULL.
+Insert nodes into BST:
+If tree is empty → create new node
+Else if data < root->data → insert into left subtree.
+Else → insert into right subtree.
+Height (Longest Path):
+If root is NULL, return 0.
+Else return 1 + max(left height, right height).
+Find Minimum Value:
+Go to the leftmost node (keep moving to root->left until NULL).
+Mirror the Tree:
+Recursively swap left and right pointers of each node.
+Search Value:
+If root == NULL, not found.
+If key == root->data, found.
+Else search left or right subtree.
+Inorder Traversal:
+Traverse left → print root → traverse right.
+Stop
+*/
