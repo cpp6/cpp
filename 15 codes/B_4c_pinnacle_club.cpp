@@ -146,3 +146,35 @@ int main() {
     }
 }
 
+/*
+Algo:
+Start
+Define structure Node
+Fields: prn, name, and pointer next.
+Create class PinnacleClub with:
+Pointer head (initially NULL).
+Functions for operations.
+Function addPresident(prn, name)
+Create new node.
+Set newNode->next = head.
+Update head = newNode.
+Function addSecretary(prn, name)
+Create new node.
+Traverse to end and attach node as last.
+Function addMember(prn, name)
+Traverse to node before secretary.
+Insert new member node before secretary.
+Function display()
+Traverse from head and print PRN and name of each member.
+Function countMembers()
+Initialize counter = 0.
+Traverse entire list, increment counter, and return total.
+Function concatenate(otherList)
+Traverse to last node of current list
+Set its next pointer to head of otherList.
+In main()
+Create two lists divA and divB.
+Display menu to perform all operations (add, count, display, concatenate).
+Repeat until user exits.
+Stop
+*/
