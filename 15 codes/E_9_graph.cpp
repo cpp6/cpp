@@ -35,7 +35,7 @@ int main() {
     cout << "Enter number of flights: ";
     cin >> flights;
 
-    cout << "Enter flight details (source destination cost):\n";
+    cout << "Enter flight details:\n";
     for (int i = 0; i < flights; i++) {
         int src, dest, cost;
         cin >> src >> dest >> cost;
@@ -82,4 +82,21 @@ Enter flight details (source destination cost):
 0 1 10
 1 2 15
 2 3 20
+
+Algo:
+Start
+Input number of cities n.
+Initialize an n × n adjacency matrix with 0s.
+Input number of flights f.
+For each flight:
+Input source, destination, and cost.
+Set graph[src][dest] = graph[dest][src] = cost.
+Display the adjacency matrix.
+Initialize all vertices as unvisited.
+Perform DFS(0) to visit all connected cities.
+If all cities are visited, then
+→ Graph is Connected
+else
+→ Graph is Not Connected.
+Stop
 */
