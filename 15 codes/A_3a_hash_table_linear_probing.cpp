@@ -119,3 +119,23 @@ int main() {
     return 0;
 }
 
+/*
+Algorithm
+Start
+Initialize hash table of size 10 with all slots empty.
+Hash Function:
+Calculate sum of ASCII values of characters in name.
+Index = sum % 10.
+Insert(name, phone):
+Find index using hash function.
+If slot empty → insert data.
+Else → move linearly to next slot (index + 1) % 10 until empty slot found.
+Search(name):
+Find index using hash function.
+If name found → display phone.
+Else → move linearly until found or empty slot → “Not found”.
+Display:
+Show all table slots with name and phone or “Empty”.
+Use menu for Insert, Search, Display, Exit.
+Stop
+*/
