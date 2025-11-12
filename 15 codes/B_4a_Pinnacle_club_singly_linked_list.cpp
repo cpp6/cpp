@@ -123,4 +123,48 @@ int main() {
                 cout << "Invalid choice. Try again.\n";
         }
     }
+return 0;
 }
+
+/*
+Algo:
+Start
+Create structure Node
+Fields:
+prn (integer)
+name (string)
+next (pointer to next node)
+Initialize class PinnacleClub
+head pointer set to NULL.
+Functions
+addPresident(prn, name)
+Create a new node with given details.
+Set newNode->next = head.
+Update head = newNode.
+addSecretary(prn, name)
+Create a new node.
+If list is empty → make this node head.
+Else traverse to last node and link new node at the end.
+addMember(prn, name)
+Check if president and secretary exist.
+Create a new node.
+Traverse till node before secretary.
+Insert the new node before secretary.
+display()
+Traverse the linked list from head.
+Print PRN and Name of each node.
+countMembers()
+Initialize counter = 0.
+Traverse through the list, increment counter for each node.
+Return total count.
+Main Function
+Use menu to perform operations:
+1 → Add President
+2 → Add Secretary
+3 → Add Member
+4 → Display Members
+5 → Count Members
+6 → Exit
+Repeat until user selects Exit.
+Stop
+*/
