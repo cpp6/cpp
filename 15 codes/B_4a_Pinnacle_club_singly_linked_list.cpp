@@ -123,7 +123,6 @@ int main() {
                 cout << "Invalid choice. Try again.\n";
         }
     }
-return 0;
 }
 
 /*
@@ -168,3 +167,4 @@ Use menu to perform operations:
 Repeat until user selects Exit.
 Stop
 */
+
