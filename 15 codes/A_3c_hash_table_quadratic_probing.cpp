@@ -105,3 +105,33 @@ int main() {
 
     return 0;
 }
+
+/*
+Algo:
+Start
+Initialize a hash table of size 10 with all slots empty.
+Hash Function:
+Compute sum of ASCII values of all characters in name.
+Index = sum % 10.
+Insert(name, phone):
+Compute h = hashFunction(name).
+For i = 0 to TABLE - 1:
+Compute index = (h + i*i) % TABLE.
+If slot empty or same name → store name, phone, mark occupied → stop.
+If no empty slot → print “Hash table full”.
+Search(name):
+Compute h = hashFunction(name).
+For i = 0 to TABLE - 1:
+Compute index = (h + i*i) % TABLE.
+If slot empty → return “Not found”.
+If name matches → return phone number.
+After loop → “Not found”
+Display:
+Print all indices with stored name and phone, or “Empty”.
+Menu:
+1 → Insert client
+2 → Search client
+3 → Display table
+4 → Exit
+Stop
+*/
