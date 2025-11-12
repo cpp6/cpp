@@ -117,4 +117,27 @@ int main()
     s.expr();
     s.check(s);
     return 0;
+
 }
+
+/*
+Algo:
+Start
+Create a class stack with:
+Array s for stack elements
+Array exp for expression
+top to track the top index
+Initialize stack (top = -1).
+Input Expression from user using expr().
+For each character in the expression:
+If it is an opening bracket (, {, [, → push() it on the stack.
+If it is a closing bracket ), }, ] →
+If stack is empty → expression is unbalanced.
+Else, check top element:
+If it matches the correct opening bracket → pop() it.
+Else → expression is unbalanced.
+After the loop:
+If stack is empty → expression is well parenthesized.
+Else → not well parenthesized.
+Stop
+*/
