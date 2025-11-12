@@ -178,7 +178,6 @@ int main() {
                 cout << "Invalid choice. Try again.\n";
         }
     }
-return 0;
 }
 
 
@@ -232,3 +231,4 @@ Exit
 Perform selected operation repeatedly until user exits.
 Stop
 */
+
