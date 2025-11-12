@@ -85,3 +85,24 @@ int main() {
     }
     return 0;
 }
+
+/*
+Algo:
+Start
+Initialize variables:
+front = 0, rear = -1, SIZE = 10, queue[SIZE].
+Menu Options:
+1️⃣ Add Job:
+If rear == SIZE - 1, queue is full.
+Else, input job name → increment rear → store job in queue[rear].
+2️⃣ Delete Job:
+If front > rear, queue is empty.
+Else, display and remove job at queue[front] → increment front.
+3️⃣ Display Jobs:
+If empty → show message.
+Else, display all jobs from front to rear.
+4️⃣ Exit:
+Terminate the program.
+Repeat menu until exit.
+Stop
+*/
